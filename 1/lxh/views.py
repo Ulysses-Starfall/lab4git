@@ -2,7 +2,7 @@
 from django.http import HttpResponse
 from bookdb.models import Author,Book
 #Author:lxh
-
+#2
 def main_sight(request):
     return render_to_response('main.html')
 
