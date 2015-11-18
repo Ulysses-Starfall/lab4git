@@ -1,4 +1,4 @@
-"""
+﻿"""
 WSGI config for lxh project.
 
 This module contains the WSGI application used by Django's development server
@@ -19,6 +19,7 @@ import os
 # if running multiple sites in the same mod_wsgi process. To fix this, use
 # mod_wsgi daemon mode with each site in its own daemon process, or use
 # os.environ["DJANGO_SETTINGS_MODULE"] = "lxh.settings"
+#b3
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "lxh.settings")
 
 # This application object is used by any WSGI server configured to use this
