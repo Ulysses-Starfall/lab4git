@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>编辑</title>
+</head>
+<body>
+    {% if error %}
+    {%for error in error %}
+    <p style="color:red;">{{error}}</p>
+    {% endfor %}
+    {% endif %}
+    <h2>选择修改下列信息：</h2>
+    <form action="/editbooks/" method="get">
+        <p><input type="radio" name="title" value="{{books.Title}}" required="required">图书标题:{{books.Title}}</p>
+        <p><input type="text" name="c0" value={{books.Publisher}}> 出版社 </p>
+        <p><input type="date" name="c1" value={{books.PublishDate}}> 出版日期 </p>
+        <p><input type="number" name="c2" value={{books.Price}}> 价格 </p>
+        <input type="submit" value="确认修改">
+    </form>
+    <h2>或：<a href="/author1/?id={{books.AuthorID.AuthorID}}">修改作者信息</a></h2>
+    <p><a href="/show">返回</a></p>
+</body>
+</html>

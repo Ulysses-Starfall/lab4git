@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>图书信息</title>
+</head>
+<body>
+    <h1>图书标题 : {{books.Title}}</h1>
+    <p>ISBN : {{books.ISBN}}</p>
+    <p>作者编号 : {{books.AuthorID.AuthorID}}</p>
+    <p>出版社 : {{books.Publisher}}</p>
+    <p>出版日期 : {{books.PublishDate}}</p>
+    <p>价格 : {{books.Price}}</p>
+    <p>作者姓名 : {{books.AuthorID.Name}}</p>
+    <p>作者年龄 : {{books.AuthorID.Age}}</p>
+    <p>作者国籍 : {{books.AuthorID.Country}}</p>
+    <p><a href="/show">返回书架</a>   <a href="/edit/?name={{books.Title}}">修改</a>    <a href="/deleteconfirm/?delete={{books.ISBN}}">删除</a></p>
+</body>
+</html>

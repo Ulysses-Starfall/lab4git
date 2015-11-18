@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+    <title>添加图书</title>
+</head>
+<body>
+    {% if error %}
+        {%for error in error %}
+            <p style="color:red;">{{error}}</p>
+        {% endfor %}
+    {% endif %}
+    <form action="/addbook/" method="get">   
+        <p><input type="number" name="a0"> ISBN </p>
+        <p><input type="text" name="a1"> 标题 </p>
+        <p><input type="number" name="a2"> 作者编号 </p>
+        <p><input type="text" name="a3"> 出版社 </p>
+        <p><input type="date" name="a4"> 出版日期 </p>
+        <p><input type="number" name="a5"> 价格 </p>
+        <input type="submit" value="添加">
+</form>
+    <a href="/">返回主页</a>
+</body>
+</html>

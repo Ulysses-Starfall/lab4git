@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>修改作者信息</title>
+</head>
+<body>
+    {% if error %}
+    {%for error in error %}
+    <p style="color:red;">{{error}}</p>
+    {% endfor %}
+    {% endif %}
+    <form action="/editauthors/" method="get">
+        <p><input type="radio" name="id" value="{{AuthorID}}" required="required">作者编号:{{AuthorID}}</p>
+        <p><input type="text" name="d0"> 姓名 </p>
+        <p><input type="number" name="d1"> 年龄 </p>
+        <p><input type="text" name="d2"> 国籍 </p>
+        <input type="submit" value="保存">
+    </form>
+    <p><a href="/edit">返回</a></p>
+</body>
+</html>
