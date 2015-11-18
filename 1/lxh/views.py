@@ -4,6 +4,7 @@ from bookdb.models import Author,Book
 
 #Author:lxh
 #b3
+#e
 def main_sight(request):
     return render_to_response('main.html')
 

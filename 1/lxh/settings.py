@@ -1,4 +1,5 @@
 ﻿# Django settings for lxh project.
+#11
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 #b3

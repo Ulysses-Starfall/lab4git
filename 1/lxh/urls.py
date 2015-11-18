@@ -1,5 +1,6 @@
 ﻿from django.conf.urls import patterns, include, url
 from lxh import views
+#c4
 # Uncomment the next two lines to enable the admin:
 #author :lxh
 
