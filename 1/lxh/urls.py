@@ -1,11 +1,10 @@
 ﻿from django.conf.urls import patterns, include, url
 from lxh import views
-#b3
 # Uncomment the next two lines to enable the admin:
 #author :lxh
 from django.contrib import admin
 admin.autodiscover()
-
+#b3
 urlpatterns = patterns('',
     ('^$',views.main_sight),
     ('^show/$',views.show),
