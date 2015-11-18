@@ -2,6 +2,7 @@
 from lxh import views
 # Uncomment the next two lines to enable the admin:
 #author :lxh
+
 from django.contrib import admin
 admin.autodiscover()
 #b3

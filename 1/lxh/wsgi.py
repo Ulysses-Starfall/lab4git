@@ -26,7 +26,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "lxh.settings")
 # setting points here.
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
-
+#b3
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication
 # application = HelloWorldApplication(application)

@@ -1,8 +1,9 @@
 ﻿from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from bookdb.models import Author,Book
-#b3
+
 #Author:lxh
+#b3
 def main_sight(request):
     return render_to_response('main.html')
 
